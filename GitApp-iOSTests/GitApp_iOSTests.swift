@@ -1,6 +1,6 @@
 //
-//  GitAppTests.swift
-//  GitAppTests
+//  GitApp_iOSTests.swift
+//  GitApp-iOSTests
 //
 //  Created by Ben Chatelain on 8/7/15.
 //  Copyright (c) 2015 phatblat. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class GitAppTests: XCTestCase {
+class GitApp_iOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
