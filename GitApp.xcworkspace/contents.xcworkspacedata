@@ -4,4 +4,7 @@
    <FileRef
       location = "group:GitApp.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/objective-git/ObjectiveGitFramework.xcodeproj">
+   </FileRef>
 </Workspace>
