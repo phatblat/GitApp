@@ -37,6 +37,7 @@
 		F8B5CC311B757F9500902E31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CC301B757F9500902E31 /* Images.xcassets */; };
 		F8B5CC341B757F9500902E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CC321B757F9500902E31 /* Main.storyboard */; };
 		F8B5CC401B757F9500902E31 /* GitAppObjc_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CC3F1B757F9500902E31 /* GitAppObjc_MacTests.m */; };
+		F8E426EC1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem in Resources */ = {isa = PBXBuildFile; fileRef = F8E426EB1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,7 @@
 		F8B5CC391B757F9500902E31 /* GitAppObjc-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitAppObjc-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B5CC3E1B757F9500902E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B5CC3F1B757F9500902E31 /* GitAppObjc_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitAppObjc_MacTests.m; sourceTree = "<group>"; };
+		F8E426EB1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "DigiCert High Assurance EV Root CA.pem"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 				F8B5CC291B757F9500902E31 /* AppDelegate.m */,
 				F8B5CC2D1B757F9500902E31 /* ViewController.h */,
 				F8B5CC2E1B757F9500902E31 /* ViewController.m */,
+				F8E426EB1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem */,
 				F8B5CC301B757F9500902E31 /* Images.xcassets */,
 				F8B5CC321B757F9500902E31 /* Main.storyboard */,
 				F8B5CC261B757F9500902E31 /* Supporting Files */,
@@ -696,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B5CC311B757F9500902E31 /* Images.xcassets in Resources */,
+				F8E426EC1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem in Resources */,
 				F8B5CC341B757F9500902E31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
