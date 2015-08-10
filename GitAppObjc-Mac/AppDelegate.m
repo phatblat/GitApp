@@ -47,8 +47,16 @@
 
     NSURL *cloneURL = [NSURL URLWithString:@"https://github.com/phatblat/GitApp.git"];
     NSURL *workDirURL = [NSURL URLWithString:@"/tmp/GitApp"];
-    NSDictionary *options = @{};
+
     NSError *error = nil;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[workDirURL path]]) {
+        if (![[NSFileManager defaultManager] removeItemAtPath:[workDirURL path] error:&error]) {
+            NSLog(@"Error removing directory at path %@", [workDirURL path]);
+            return;
+        }
+    }
+
+    NSDictionary *options = @{};
     GTRepository *repo = [GTRepository cloneFromURL:cloneURL toWorkingDirectory:workDirURL options:options error:&error
       transferProgressBlock:^(const git_transfer_progress * _Nonnull progress, BOOL * _Nonnull stop) {
         NSLog(@"transfer progress %ld/%ld", (long)progress->received_objects, (long)progress->total_objects);
