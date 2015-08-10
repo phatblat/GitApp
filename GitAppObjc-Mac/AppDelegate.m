@@ -51,7 +51,7 @@
     NSError *error = nil;
     GTRepository *repo = [GTRepository cloneFromURL:cloneURL toWorkingDirectory:workDirURL options:options error:&error
       transferProgressBlock:^(const git_transfer_progress * _Nonnull progress, BOOL * _Nonnull stop) {
-        NSLog(@"transfer progress %ld", (long)progress->received_objects);
+        NSLog(@"transfer progress %ld/%ld", (long)progress->received_objects, (long)progress->total_objects);
     } checkoutProgressBlock:^(NSString * _Nonnull path, NSUInteger completedSteps, NSUInteger totalSteps) {
         NSLog(@"clone progress %ld/%ld", (long)completedSteps, (long)totalSteps);
     }];
