@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <ObjectiveGit/ObjectiveGit.h>
+
 @interface AppDelegate ()
 
 @end
@@ -15,31 +17,43 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    NSString *CACertificateFile_DigiCert = @"DigiCert High Assurance EV Root CA.pem";
+    NSString *certFilePath = [[NSBundle mainBundle] pathForResource:[CACertificateFile_DigiCert stringByDeletingPathExtension] ofType:[CACertificateFile_DigiCert pathExtension]];
+    NSLog(@"certFilePath: %@", certFilePath);
+
+    int returnValue = git_libgit2_opts(GIT_OPT_SET_SSL_CERT_LOCATIONS, [certFilePath UTF8String], NULL);
+    if (returnValue != GITERR_NONE) {
+        NSLog(@"git_libgit2_opts returned an error %ld", (long)returnValue);
+    }
+
+    NSURL *cloneURL = [NSURL URLWithString:@"https://github.com/phatblat/GitApp.git"];
+    NSURL *workDirURL = [NSURL URLWithString:@"/tmp/GitApp"];
+
+    NSError *error = nil;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[workDirURL path]]) {
+        if (![[NSFileManager defaultManager] removeItemAtPath:[workDirURL path] error:&error]) {
+            NSLog(@"Error removing directory at path %@", [workDirURL path]);
+            return NO;
+        }
+    }
+
+    NSDictionary *options = @{};
+    GTRepository *repo = [GTRepository cloneFromURL:cloneURL toWorkingDirectory:workDirURL options:options error:&error
+      transferProgressBlock:^(const git_transfer_progress * _Nonnull progress, BOOL * _Nonnull stop) {
+        NSLog(@"transfer progress %ld/%ld", (long)progress->received_objects, (long)progress->total_objects);
+    } checkoutProgressBlock:^(NSString * _Nonnull path, NSUInteger completedSteps, NSUInteger totalSteps) {
+        NSLog(@"clone progress %ld/%ld", (long)completedSteps, (long)totalSteps);
+    }];
+
+    if (!repo) {
+        NSLog(@"Error cloning repo %@", error);
+        return NO;
+    }
+    NSLog(@"Cloned repo: %@", repo.description);
+
     return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end
