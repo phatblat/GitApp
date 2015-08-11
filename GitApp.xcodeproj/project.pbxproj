@@ -37,6 +37,7 @@
 		F8B5CC311B757F9500902E31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CC301B757F9500902E31 /* Images.xcassets */; };
 		F8B5CC341B757F9500902E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CC321B757F9500902E31 /* Main.storyboard */; };
 		F8B5CC401B757F9500902E31 /* GitAppObjc_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CC3F1B757F9500902E31 /* GitAppObjc_MacTests.m */; };
+		F8D67E291B79A20600021BDF /* DigiCert High Assurance EV Root CA.pem in Resources */ = {isa = PBXBuildFile; fileRef = F8E426EB1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem */; };
 		F8E426EC1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem in Resources */ = {isa = PBXBuildFile; fileRef = F8E426EB1B781E28005C018D /* DigiCert High Assurance EV Root CA.pem */; };
 /* End PBXBuildFile section */
 
@@ -682,6 +683,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B5CC081B757F8500902E31 /* Main.storyboard in Resources */,
+				F8D67E291B79A20600021BDF /* DigiCert High Assurance EV Root CA.pem in Resources */,
 				F8B5CC0D1B757F8500902E31 /* LaunchScreen.xib in Resources */,
 				F8B5CC0A1B757F8500902E31 /* Images.xcassets in Resources */,
 			);
