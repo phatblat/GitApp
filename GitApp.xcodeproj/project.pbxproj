@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F804BF531B7BEDE300C40501 /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F804BF521B7BEDE300C40501 /* git2.framework */; };
+		F804BF541B7BEDE300C40501 /* git2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F804BF521B7BEDE300C40501 /* git2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F804BF551B7BEE0100C40501 /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F804BF521B7BEDE300C40501 /* git2.framework */; };
+		F804BF561B7BEE0100C40501 /* git2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F804BF521B7BEDE300C40501 /* git2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F804BF581B7BEE1900C40501 /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F804BF571B7BEE1900C40501 /* git2.framework */; };
+		F804BF591B7BEE1900C40501 /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F804BF571B7BEE1900C40501 /* git2.framework */; };
 		F85E8E181B7648480024E6E5 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */; };
 		F85E8E1D1B7649040024E6E5 /* ObjectiveGit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F85E8E1F1B76490E0024E6E5 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */; };
@@ -89,6 +95,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F804BF541B7BEDE300C40501 /* git2.framework in Embed Frameworks */,
 				F85E8E1D1B7649040024E6E5 /* ObjectiveGit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -100,6 +107,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F804BF561B7BEE0100C40501 /* git2.framework in Embed Frameworks */,
 				F85E8E211B76491D0024E6E5 /* ObjectiveGit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -118,6 +126,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F804BF521B7BEDE300C40501 /* git2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = git2.framework; path = Carthage/Build/Mac/git2.framework; sourceTree = "<group>"; };
+		F804BF571B7BEE1900C40501 /* git2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = git2.framework; path = Carthage/Build/iOS/git2.framework; sourceTree = "<group>"; };
 		F85E8E0B1B75AE5F0024E6E5 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/iOS/ObjectiveGit.framework; sourceTree = "<group>"; };
 		F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/Mac/ObjectiveGit.framework; sourceTree = "<group>"; };
@@ -173,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F804BF581B7BEE1900C40501 /* git2.framework in Frameworks */,
 				F85E8E181B7648480024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F804BF531B7BEDE300C40501 /* git2.framework in Frameworks */,
 				F85E8E1F1B76490E0024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F804BF591B7BEE1900C40501 /* git2.framework in Frameworks */,
 				F85E8E231B76493C0024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F804BF551B7BEE0100C40501 /* git2.framework in Frameworks */,
 				F85E8E201B76491D0024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +251,8 @@
 			children = (
 				F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */,
 				F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */,
+				F804BF571B7BEE1900C40501 /* git2.framework */,
+				F804BF521B7BEDE300C40501 /* git2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -723,6 +739,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/git2.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (
@@ -738,6 +755,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/git2.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (
