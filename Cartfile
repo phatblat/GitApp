@@ -1,1 +1,2 @@
 github "libgit2/objective-git"
+github "phatblat/git2.framework" "headers"

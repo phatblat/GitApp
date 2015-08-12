@@ -1,3 +1,6 @@
 [submodule "Carthage/Checkouts/objective-git"]
 	path = Carthage/Checkouts/objective-git
 	url = https://github.com/libgit2/objective-git.git
+[submodule "Carthage/Checkouts/git2.framework"]
+	path = Carthage/Checkouts/git2.framework
+	url = https://github.com/phatblat/git2.framework.git
