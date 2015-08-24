@@ -100,7 +100,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F85E8E0B1B75AE5F0024E6E5 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/iOS/ObjectiveGit.framework; sourceTree = "<group>"; };
 		F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/Mac/ObjectiveGit.framework; sourceTree = "<group>"; };
 		F86E06C51B75A12F005D9865 /* GitApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,7 +259,6 @@
 		F8B5CBA51B757E3300902E31 = {
 			isa = PBXGroup;
 			children = (
-				F85E8E0B1B75AE5F0024E6E5 /* Cartfile */,
 				F86E06C61B75A12F005D9865 /* GitApp-iOS */,
 				F86E06DC1B75A12F005D9865 /* GitApp-iOSTests */,
 				F8B5CBD81B757F6E00902E31 /* GitApp-Mac */,
