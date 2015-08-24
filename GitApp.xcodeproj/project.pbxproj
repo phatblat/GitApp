@@ -36,6 +36,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F84E92651B8BAC670019F947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = "ObjectiveGit-Mac";
+		};
+		F84E92671B8BAC670019F947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F05A6B16011E5400B7AD1D;
+			remoteInfo = "ObjectiveGit-MacTests";
+		};
+		F84E92691B8BAC670019F947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D01B6ED319F82E2000D411BC;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
 		F86E06DA1B75A12F005D9865 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8B5CBA61B757E3300902E31 /* Project object */;
@@ -100,6 +121,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "External/objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
 		F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/iOS/ObjectiveGit.framework; sourceTree = "<group>"; };
 		F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/Mac/ObjectiveGit.framework; sourceTree = "<group>"; };
 		F86E06C51B75A12F005D9865 /* GitApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +231,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F84E925C1B8BAC670019F947 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F84E92661B8BAC670019F947 /* ObjectiveGit.framework */,
+				F84E92681B8BAC670019F947 /* ObjectiveGit-MacTests.xctest */,
+				F84E926A1B8BAC670019F947 /* ObjectiveGit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F85E8E101B7646FE0024E6E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +301,7 @@
 				F8B5CC3C1B757F9500902E31 /* GitAppObjc-MacTests */,
 				F85E8E101B7646FE0024E6E5 /* Frameworks */,
 				F8B5CBAF1B757E3400902E31 /* Products */,
+				F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -603,6 +636,12 @@
 			mainGroup = F8B5CBA51B757E3300902E31;
 			productRefGroup = F8B5CBAF1B757E3400902E31 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F84E925C1B8BAC670019F947 /* Products */;
+					ProjectRef = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F86E06C41B75A12F005D9865 /* GitApp-iOS */,
@@ -616,6 +655,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F84E92661B8BAC670019F947 /* ObjectiveGit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveGit.framework;
+			remoteRef = F84E92651B8BAC670019F947 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F84E92681B8BAC670019F947 /* ObjectiveGit-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectiveGit-MacTests.xctest";
+			remoteRef = F84E92671B8BAC670019F947 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F84E926A1B8BAC670019F947 /* ObjectiveGit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveGit.framework;
+			remoteRef = F84E92691B8BAC670019F947 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F86E06C31B75A12F005D9865 /* Resources */ = {
