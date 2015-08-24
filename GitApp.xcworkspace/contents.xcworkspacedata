@@ -4,7 +4,4 @@
    <FileRef
       location = "group:GitApp.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/objective-git/External/libgit2">
-   </FileRef>
 </Workspace>
