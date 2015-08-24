@@ -41,9 +41,9 @@
 
     NSDictionary *options = @{};
     GTRepository *repo = [GTRepository cloneFromURL:cloneURL toWorkingDirectory:workDirURL options:options error:&error
-      transferProgressBlock:^(const git_transfer_progress * _Nonnull progress, BOOL * _Nonnull stop) {
+      transferProgressBlock:^(const git_transfer_progress * __nonnull progress, BOOL * __nonnull stop) {
         NSLog(@"transfer progress %ld/%ld", (long)progress->received_objects, (long)progress->total_objects);
-    } checkoutProgressBlock:^(NSString * _Nonnull path, NSUInteger completedSteps, NSUInteger totalSteps) {
+    } checkoutProgressBlock:^(NSString * __nonnull path, NSUInteger completedSteps, NSUInteger totalSteps) {
         NSLog(@"clone progress %ld/%ld", (long)completedSteps, (long)totalSteps);
     }];
 
