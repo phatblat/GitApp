@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84E92751B8BACE40019F947 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
+		F84E92761B8BACEC0019F947 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
 		F86E06CA1B75A12F005D9865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E06C91B75A12F005D9865 /* AppDelegate.swift */; };
 		F86E06CC1B75A12F005D9865 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E06CB1B75A12F005D9865 /* ViewController.swift */; };
 		F86E06CF1B75A12F005D9865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86E06CD1B75A12F005D9865 /* Main.storyboard */; };
@@ -204,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84E92761B8BACEC0019F947 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84E92751B8BACE40019F947 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
