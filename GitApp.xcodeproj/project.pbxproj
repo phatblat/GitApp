@@ -57,6 +57,20 @@
 			remoteGlobalIDString = D01B6ED319F82E2000D411BC;
 			remoteInfo = "ObjectiveGit-iOS";
 		};
+		F84E92711B8BACCA0019F947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = "ObjectiveGit-Mac";
+		};
+		F84E92731B8BACCE0019F947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = "ObjectiveGit-Mac";
+		};
 		F86E06DA1B75A12F005D9865 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8B5CBA61B757E3300902E31 /* Project object */;
@@ -489,6 +503,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F84E92721B8BACCA0019F947 /* PBXTargetDependency */,
 			);
 			name = "GitApp-Mac";
 			productName = "GitApp-Mac";
@@ -561,6 +576,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F84E92741B8BACCE0019F947 /* PBXTargetDependency */,
 			);
 			name = "GitAppObjc-Mac";
 			productName = "GitAppObjc-Mac";
@@ -825,6 +841,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F84E92721B8BACCA0019F947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveGit-Mac";
+			targetProxy = F84E92711B8BACCA0019F947 /* PBXContainerItemProxy */;
+		};
+		F84E92741B8BACCE0019F947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveGit-Mac";
+			targetProxy = F84E92731B8BACCE0019F947 /* PBXContainerItemProxy */;
+		};
 		F86E06DB1B75A12F005D9865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F86E06C41B75A12F005D9865 /* GitApp-iOS */;
