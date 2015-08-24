@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import <ObjectiveGit/ObjectiveGit.h>
+@import ObjectiveGit;
 
 @interface AppDelegate ()
 
