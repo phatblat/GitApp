@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F84E92751B8BACE40019F947 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
 		F84E92761B8BACEC0019F947 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
+		F84E92781B8BAD260019F947 /* ObjectiveGit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F84E927B1B8BAD8E0019F947 /* ObjectiveGit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F86E06CA1B75A12F005D9865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E06C91B75A12F005D9865 /* AppDelegate.swift */; };
 		F86E06CC1B75A12F005D9865 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E06CB1B75A12F005D9865 /* ViewController.swift */; };
 		F86E06CF1B75A12F005D9865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86E06CD1B75A12F005D9865 /* Main.storyboard */; };
@@ -104,17 +106,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F85E8E1A1B7648480024E6E5 /* Embed Frameworks */ = {
+		F84E92771B8BAD0E0019F947 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F84E92781B8BAD260019F947 /* ObjectiveGit.framework in Copy Frameworks */,
 			);
-			name = "Embed Frameworks";
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F85E8E221B76491E0024E6E5 /* Embed Frameworks */ = {
+		F84E927A1B8BAD860019F947 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F84E927B1B8BAD8E0019F947 /* ObjectiveGit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85E8E1A1B7648480024E6E5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -503,6 +517,7 @@
 				F8B5CBD31B757F6E00902E31 /* Sources */,
 				F8B5CBD41B757F6E00902E31 /* Frameworks */,
 				F8B5CBD51B757F6E00902E31 /* Resources */,
+				F84E92771B8BAD0E0019F947 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -575,7 +590,7 @@
 				F8B5CC201B757F9500902E31 /* Sources */,
 				F8B5CC211B757F9500902E31 /* Frameworks */,
 				F8B5CC221B757F9500902E31 /* Resources */,
-				F85E8E221B76491E0024E6E5 /* Embed Frameworks */,
+				F84E927A1B8BAD860019F947 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
