@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8494FD61B8BB266003F7320 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
+		F8494FD71B8BB26B003F7320 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
 		F84E92751B8BACE40019F947 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
 		F84E92761B8BACEC0019F947 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; };
 		F84E92781B8BAD260019F947 /* ObjectiveGit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F84E92661B8BAC670019F947 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,6 +42,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F8494FCC1B8BB22C003F7320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D01B6ED219F82E2000D411BC;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
+		F8494FD41B8BB230003F7320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D01B6ED219F82E2000D411BC;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
 		F84E92651B8BAC670019F947 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F84E925B1B8BAC670019F947 /* ObjectiveGitFramework.xcodeproj */;
@@ -128,26 +144,6 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F85E8E1A1B7648480024E6E5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F85E8E251B76493C0024E6E5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8494FD71B8BB26B003F7320 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8494FD61B8BB266003F7320 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,11 +479,11 @@
 				F86E06C11B75A12F005D9865 /* Sources */,
 				F86E06C21B75A12F005D9865 /* Frameworks */,
 				F86E06C31B75A12F005D9865 /* Resources */,
-				F85E8E1A1B7648480024E6E5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F8494FCD1B8BB22C003F7320 /* PBXTargetDependency */,
 			);
 			name = "GitApp-iOS";
 			productName = "GitApp-iOS";
@@ -554,11 +552,11 @@
 				F8B5CBF61B757F8500902E31 /* Sources */,
 				F8B5CBF71B757F8500902E31 /* Frameworks */,
 				F8B5CBF81B757F8500902E31 /* Resources */,
-				F85E8E251B76493C0024E6E5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F8494FD51B8BB230003F7320 /* PBXTargetDependency */,
 			);
 			name = "GitAppObjc-iOS";
 			productName = "GitAppObjc-iOS";
@@ -860,6 +858,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F8494FCD1B8BB22C003F7320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveGit-iOS";
+			targetProxy = F8494FCC1B8BB22C003F7320 /* PBXContainerItemProxy */;
+		};
+		F8494FD51B8BB230003F7320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveGit-iOS";
+			targetProxy = F8494FD41B8BB230003F7320 /* PBXContainerItemProxy */;
+		};
 		F84E92721B8BACCA0019F947 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ObjectiveGit-Mac";
