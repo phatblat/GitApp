@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F85E8E181B7648480024E6E5 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */; };
-		F85E8E1D1B7649040024E6E5 /* ObjectiveGit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F85E8E1F1B76490E0024E6E5 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */; };
-		F85E8E201B76491D0024E6E5 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */; };
-		F85E8E211B76491D0024E6E5 /* ObjectiveGit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E141B76473D0024E6E5 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F85E8E231B76493C0024E6E5 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85E8E0C1B7646EB0024E6E5 /* ObjectiveGit.framework */; };
 		F86E06CA1B75A12F005D9865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E06C91B75A12F005D9865 /* AppDelegate.swift */; };
 		F86E06CC1B75A12F005D9865 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E06CB1B75A12F005D9865 /* ViewController.swift */; };
 		F86E06CF1B75A12F005D9865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86E06CD1B75A12F005D9865 /* Main.storyboard */; };
@@ -83,24 +77,12 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F85E8E1E1B7649040024E6E5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F85E8E1D1B7649040024E6E5 /* ObjectiveGit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F85E8E221B76491E0024E6E5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F85E8E211B76491D0024E6E5 /* ObjectiveGit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +155,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85E8E181B7648480024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +169,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85E8E1F1B76490E0024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +183,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85E8E231B76493C0024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85E8E201B76491D0024E6E5 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +419,6 @@
 				F86E06C21B75A12F005D9865 /* Frameworks */,
 				F86E06C31B75A12F005D9865 /* Resources */,
 				F85E8E1A1B7648480024E6E5 /* Embed Frameworks */,
-				F85E8E1B1B7648E00024E6E5 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,7 +454,6 @@
 				F8B5CBD31B757F6E00902E31 /* Sources */,
 				F8B5CBD41B757F6E00902E31 /* Frameworks */,
 				F8B5CBD51B757F6E00902E31 /* Resources */,
-				F85E8E1E1B7649040024E6E5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -514,7 +490,6 @@
 				F8B5CBF71B757F8500902E31 /* Frameworks */,
 				F8B5CBF81B757F8500902E31 /* Resources */,
 				F85E8E251B76493C0024E6E5 /* Embed Frameworks */,
-				F85E8E261B76494B0024E6E5 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -715,39 +690,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		F85E8E1B1B7648E00024E6E5 /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		F85E8E261B76494B0024E6E5 /* Carthage Copy Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework",
-			);
-			name = "Carthage Copy Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F86E06C11B75A12F005D9865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -900,10 +842,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -919,10 +858,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "GitApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.phatblat.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1059,10 +995,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1082,10 +1015,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "GitApp-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -1143,10 +1073,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1155,7 +1082,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.phatblat.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework/Headers";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1164,15 +1091,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "GitAppObjc-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.phatblat.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework/Headers";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -1219,10 +1143,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1242,10 +1163,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "GitAppObjc-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
