@@ -103,6 +103,13 @@
         return cred;
     }];
 
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[workDirURL path]]) {
+        if (![[NSFileManager defaultManager] removeItemAtPath:[workDirURL path] error:&error]) {
+            NSLog(@"Error removing directory at path %@", [workDirURL path]);
+            return;
+        }
+    }
+
     error = nil;
     repo = [GTRepository cloneFromURL:cloneURL toWorkingDirectory:workDirURL options:@{GTRepositoryCloneOptionsCredentialProvider: provider} error:&error
                 transferProgressBlock:^(const git_transfer_progress * __nonnull progress, BOOL * __nonnull stop) {
