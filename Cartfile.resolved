@@ -1,2 +1,2 @@
-github "phatblat/git2.framework" "e3986eca6cb075862790768c9c53b4fb41a68e1a"
-github "libgit2/objective-git" "bde171343cf73d5d00e32fb31b2bb130716a50d9"
+github "phatblat/git2" "6d27ae8b6d00476784bbd72bbefae70da3d352a6"
+github "libgit2/objective-git" "d65f26235dca325b3593349cc181b1bd8c087b87"

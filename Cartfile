@@ -1,2 +1,2 @@
 github "libgit2/objective-git" "master"
-github "phatblat/git2.framework" "master"
+github "phatblat/git2" "master"
